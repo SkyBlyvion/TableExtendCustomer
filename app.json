@@ -1,0 +1,32 @@
+{
+  "id": "ed83dce1-d074-49ab-b7c4-27e0d75456fc",
+  "name": "TableExtCustomers",
+  "publisher": "Lopez Nicolas - REVIMPORT",
+  "version": "1.0.0.0",
+  "brief": "TableExtensionCustomers",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "24.0.0.0",
+  "idRanges": [
+    {
+      "from": 50036,
+      "to": 50045
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": true,
+    "includeSourceInSymbolFile": true
+  },
+  "runtime": "13.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}
