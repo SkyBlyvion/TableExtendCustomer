@@ -2,9 +2,10 @@ pageextension 50036 "CustomerCardExtension" extends "Customer Card"
 {
     layout
     {
-        addlast(Content)
+        // General
+        addlast(General)
         {
-            group("Custom Fields")
+            group("Custom General Fields")
             {
                 field("Date création fiche"; Rec."Date création fiche")
                 {
@@ -26,6 +27,38 @@ pageextension 50036 "CustomerCardExtension" extends "Customer Card"
                 {
                     ApplicationArea = All;
                 }
+                field("Date création entreprise"; Rec."Date création entreprise")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+
+        // Address & Contact
+        addlast("Address & Contact")
+        {
+            group("Custom Address & Contact Fields")
+            {
+                field("N° téléphone 2"; Rec."N° téléphone 2")
+                {
+                    ApplicationArea = All;
+                }
+                field("E-Mail 2"; Rec."E-Mail 2")
+                {
+                    ApplicationArea = All;
+                }
+                field("E-Mail Compta"; Rec."E-Mail Compta")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+
+        // Invoicing
+        addlast(Invoicing)
+        {
+            group("Custom Invoicing Fields")
+            {
                 field("Soumis à R.F.A"; Rec."Soumis à R.F.A")
                 {
                     ApplicationArea = All;
@@ -34,19 +67,15 @@ pageextension 50036 "CustomerCardExtension" extends "Customer Card"
                 {
                     ApplicationArea = All;
                 }
-                field("N° téléphone 2"; Rec."N° téléphone 2")
-                {
-                    ApplicationArea = All;
-                }
                 field("Taux RFA à accorder"; Rec."Taux RFA à accorder")
                 {
                     ApplicationArea = All;
                 }
-                field("Date création entreprise"; Rec."Date création entreprise")
+                field("Facturation Revimex"; Rec."Facturation Revimex")
                 {
                     ApplicationArea = All;
                 }
-                field("Edition étiquettes"; Rec."Edition étiquettes")
+                field("N° compte Revimex"; Rec."N° compte Revimex")
                 {
                     ApplicationArea = All;
                 }
@@ -62,35 +91,19 @@ pageextension 50036 "CustomerCardExtension" extends "Customer Card"
                 {
                     ApplicationArea = All;
                 }
-                field("Facturation Revimex"; Rec."Facturation Revimex")
-                {
-                    ApplicationArea = All;
-                }
-                field("E-Mail 2"; Rec."E-Mail 2")
-                {
-                    ApplicationArea = All;
-                }
-                field("Code Franco"; Rec."Code Franco")
-                {
-                    ApplicationArea = All;
-                }
-                field("Promotion Web"; Rec."Promotion Web")
-                {
-                    ApplicationArea = All;
-                }
-                field("Mode règlement"; Rec."Mode règlement")
-                {
-                    ApplicationArea = All;
-                }
-                field("Décision assurance"; Rec."Décision assurance")
-                {
-                    ApplicationArea = All;
-                }
                 field("Tarifa"; Rec."Tarifa")
                 {
                     ApplicationArea = All;
                 }
-                field("N° compte Revimex"; Rec."N° compte Revimex")
+            }
+        }
+
+        // Payments
+        addlast(Payments)
+        {
+            group("Custom Payments Fields")
+            {
+                field("Mode règlement"; Rec."Mode règlement")
                 {
                     ApplicationArea = All;
                 }
@@ -103,6 +116,30 @@ pageextension 50036 "CustomerCardExtension" extends "Customer Card"
                     ApplicationArea = All;
                 }
                 field("Montant reliquat"; Rec."Montant reliquat")
+                {
+                    ApplicationArea = All;
+                }
+                field("Décision assurance"; Rec."Décision assurance")
+                {
+                    ApplicationArea = All;
+                }
+            }
+        }
+
+        // Shipping
+        addlast(Shipping)
+        {
+            group("Custom Shipping Fields")
+            {
+                field("Code Franco"; Rec."Code Franco")
+                {
+                    ApplicationArea = All;
+                }
+                field("Promotion Web"; Rec."Promotion Web")
+                {
+                    ApplicationArea = All;
+                }
+                field("Edition étiquettes"; Rec."Edition étiquettes")
                 {
                     ApplicationArea = All;
                 }
@@ -123,10 +160,6 @@ pageextension 50036 "CustomerCardExtension" extends "Customer Card"
                     ApplicationArea = All;
                 }
                 field("Activer destinataire web"; Rec."Activer destinataire web")
-                {
-                    ApplicationArea = All;
-                }
-                field("E-Mail Compta"; Rec."E-Mail Compta")
                 {
                     ApplicationArea = All;
                 }
