@@ -2,7 +2,7 @@
   "id": "ed83dce1-d074-49ab-b7c4-27e0d75456fc",
   "name": "TableExtCustomers",
   "publisher": "Lopez Nicolas - REVIMPORT",
-  "version": "1.0.0.0",
+  "version": "1.0.0.1",
   "brief": "TableExtensionCustomers",
   "description": "",
   "privacyStatement": "",
@@ -16,7 +16,7 @@
   "application": "24.0.0.0",
   "idRanges": [
     {
-      "from": 50036,
+      "from": 50037,
       "to": 50045
     }
   ],

@@ -1,4 +1,4 @@
-pageextension 50036 "CustomerCardExtension" extends "Customer Card"
+pageextension 50038 "CustomerCardExtension" extends "Customer Card"
 {
     layout
     {
@@ -18,6 +18,8 @@ pageextension 50036 "CustomerCardExtension" extends "Customer Card"
                 field("Code famille client"; Rec."Code famille client")
                 {
                     ApplicationArea = All;
+                    // ajout de la relation entre champ Code famille client de la table CustomerCard et Code de la table FamilleClient
+                    TableRelation = "Familleclient"."Code";
                 }
                 field("Commentaires Client"; Rec."Commentaires Client")
                 {
