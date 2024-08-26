@@ -1,5 +1,6 @@
 pageextension 50038 "CustomerCardExtension" extends "Customer Card"
 {
+    Editable = true;
     layout
     {
         // General
@@ -172,19 +173,17 @@ pageextension 50038 "CustomerCardExtension" extends "Customer Card"
     {
         addlast(Processing)
         {
-            action("Famille Client Table")
+            action("Ouvrir Famille Client Table")
             {
                 ApplicationArea = All;
-                Caption = 'Famille Client Table';
+                Caption = 'Ouvrir Famille Client Table';
                 Description = 'CUSTOMER LN 20/08/24 REV24';
                 Tooltip = 'Famille Client Table';
-                Image = AddContacts;
+                Image = NewDocument;
 
                 trigger OnAction()
-                var
-                    FamilleClient: Record "FamilleClient";
                 begin
-                    PAGE.RunModal(PAGE::"ListFamilleClient", FamilleClient);
+                    PAGE.RunModal(PAGE::"ListFamilleClient");
                 end;
             }
         }

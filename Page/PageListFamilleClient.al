@@ -2,8 +2,8 @@ page 50041 ListFamilleClient
 {
     PageType = List;
     ApplicationArea = All;
-    UsageCategory = Lists;
     SourceTable = FamilleClient;
+    Editable = true;
 
     layout
     {
@@ -15,19 +15,14 @@ page 50041 ListFamilleClient
                 {
                     ApplicationArea = All;
                     Caption = 'Code';
-                    Description = 'CUSTOMER LN 20/08/24 REV24';
                 }
                 field(Description; Rec.Description)
                 {
                     ApplicationArea = All;
                     Caption = 'Description';
-                    Description = 'CUSTOMER LN 20/08/24 REV24';
-
                 }
             }
         }
-
     }
-
 
 }
