@@ -168,4 +168,25 @@ pageextension 50038 "CustomerCardExtension" extends "Customer Card"
             }
         }
     }
+    actions
+    {
+        addlast(Processing)
+        {
+            action("Famille Client Table")
+            {
+                ApplicationArea = All;
+                Caption = 'Famille Client Table';
+                Description = 'CUSTOMER LN 20/08/24 REV24';
+                Tooltip = 'Famille Client Table';
+                Image = AddContacts;
+
+                trigger OnAction()
+                var
+                    FamilleClient: Record "FamilleClient";
+                begin
+                    PAGE.RunModal(PAGE::"ListFamilleClient", FamilleClient);
+                end;
+            }
+        }
+    }
 }
