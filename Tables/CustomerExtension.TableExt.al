@@ -23,7 +23,7 @@ tableextension 50037 "CustomerExtension" extends Customer
             Description = 'CUSTOMER LN 18/06/24 REV24';
             Tooltip = 'Entrez le code famille du client.';
         }
-        field(50005; "Commentaires Client"; Boolean)
+        field(50005; "Commentaires Client"; Text[250])
         {
             DataClassification = ToBeClassified;
             Caption = 'Commentaires Client';

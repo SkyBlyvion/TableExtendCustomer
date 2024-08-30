@@ -29,7 +29,5 @@ table 50039 FamilleClient
         }
     }
 
-    var
-        myInt: Integer;
 
 }
