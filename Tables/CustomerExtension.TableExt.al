@@ -23,13 +23,6 @@ tableextension 50037 "CustomerExtension" extends Customer
             Description = 'CUSTOMER LN 18/06/24 REV24';
             Tooltip = 'Entrez le code famille du client.';
         }
-        field(50005; "Commentaires Client"; Text[250])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Commentaires Client';
-            Description = 'CUSTOMER LN 18/06/24 REV24';
-            Tooltip = 'Indiquez si des commentaires client existent.';
-        }
         field(50009; "Code APE"; Text[10])
         {
             DataClassification = ToBeClassified;
@@ -135,13 +128,7 @@ tableextension 50037 "CustomerExtension" extends Customer
             Description = 'CUSTOMER LN 18/06/24 REV24';
             Tooltip = 'Entrez le mode de règlement.';
         }
-        field(50055; "Décision assurance"; Text[30])
-        {
-            DataClassification = ToBeClassified;
-            Caption = 'Décision assurance';
-            Description = 'CUSTOMER LN 18/06/24 REV24';
-            Tooltip = 'Entrez la décision d''assurance.';
-        }
+
         field(50057; "Tarifa"; Integer)
         {
             DataClassification = ToBeClassified;
